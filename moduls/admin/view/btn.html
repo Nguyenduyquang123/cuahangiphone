@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with Icons</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-GLJzWm8WQ3aBoG0Fs48SA3n3du2eyKXZTV8bRp+MMSy1ev5ufDkDl+tZTADJ+gIrWe4dRj5dpPcz28YrPgqPVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.view-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn i {
+    pointer-events: none; /* Để biểu tượng không bị ảnh hưởng khi bấm vào nút */
+}
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="btn view-btn" title="View"><i class="fas fa-eye"></i></button>
+        <button class="btn delete-btn" title="Delete"><i class="fas fa-times"></i></button>
+    </div>
+</body>
+</html>
